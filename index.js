@@ -47,6 +47,10 @@ small.addEventListener("click", () => {
   medium.classList.remove("activeButton");
   large.classList.remove("activeButton");
   small.classList.add("activeButton");
+  rainbow.classList.remove("activeButton");
+  eraser.classList.remove("activeButton");
+  clear.classList.remove("activeButton");
+  classic.classList.add("activeButton");
 });
 medium.addEventListener("click", () => {
   draw.innerHTML = "";
@@ -55,6 +59,10 @@ medium.addEventListener("click", () => {
   small.classList.remove("activeButton");
   large.classList.remove("activeButton");
   medium.classList.add("activeButton");
+  rainbow.classList.remove("activeButton");
+  eraser.classList.remove("activeButton");
+  clear.classList.remove("activeButton");
+  classic.classList.add("activeButton");
 });
 large.addEventListener("click", () => {
   draw.innerHTML = "";
@@ -63,6 +71,10 @@ large.addEventListener("click", () => {
   medium.classList.remove("activeButton");
   small.classList.remove("activeButton");
   large.classList.add("activeButton");
+  rainbow.classList.remove("activeButton");
+  eraser.classList.remove("activeButton");
+  clear.classList.remove("activeButton");
+  classic.classList.add("activeButton");
 });
 classic.addEventListener("click", () => {
   currentColor = "black";

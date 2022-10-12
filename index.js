@@ -49,7 +49,6 @@ small.addEventListener("click", () => {
   small.classList.add("activeButton");
   rainbow.classList.remove("activeButton");
   eraser.classList.remove("activeButton");
-  clear.classList.remove("activeButton");
   classic.classList.add("activeButton");
 });
 medium.addEventListener("click", () => {
@@ -61,7 +60,6 @@ medium.addEventListener("click", () => {
   medium.classList.add("activeButton");
   rainbow.classList.remove("activeButton");
   eraser.classList.remove("activeButton");
-  clear.classList.remove("activeButton");
   classic.classList.add("activeButton");
 });
 large.addEventListener("click", () => {
@@ -73,14 +71,12 @@ large.addEventListener("click", () => {
   large.classList.add("activeButton");
   rainbow.classList.remove("activeButton");
   eraser.classList.remove("activeButton");
-  clear.classList.remove("activeButton");
   classic.classList.add("activeButton");
 });
 classic.addEventListener("click", () => {
   currentColor = "black";
   rainbow.classList.remove("activeButton");
   eraser.classList.remove("activeButton");
-  clear.classList.remove("activeButton");
   classic.classList.add("activeButton");
 });
 rainbow.addEventListener("click", () => {
@@ -88,14 +84,12 @@ rainbow.addEventListener("click", () => {
   currentColor = `${randomColor()}`;
   classic.classList.remove("activeButton");
   eraser.classList.remove("activeButton");
-  clear.classList.remove("activeButton");
   rainbow.classList.add("activeButton");
 });
 eraser.addEventListener("click", () => {
   currentColor = "white";
   rainbow.classList.remove("activeButton");
   classic.classList.remove("activeButton");
-  clear.classList.remove("activeButton");
   eraser.classList.add("activeButton");
 });
 clear.addEventListener("click", () => {
@@ -104,7 +98,6 @@ clear.addEventListener("click", () => {
   generateGrid(16);
   rainbow.classList.remove("activeButton");
   eraser.classList.remove("activeButton");
-  clear.classList.remove("activeButton");
   small.classList.remove("activeButton");
   large.classList.remove("activeButton");
   medium.classList.add("activeButton");

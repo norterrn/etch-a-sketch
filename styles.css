@@ -50,15 +50,3 @@ button {
   padding: 6px;
 }
 
-.white {
-  background-color: white;
-}
-.black {
-    transition-delay: 9999s;
-}
-.black:hover {
-    transition-delay: 0s;
-  background-color: black;
-}
-
-

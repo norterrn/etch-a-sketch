@@ -8,7 +8,6 @@ const eraser = document.querySelector(".eraser");
 const clear = document.querySelector(".clear");
 let currentColor = "black";
 
-
 function generateGrid(size) {
   draw.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
   draw.style.gridTemplateRows = `repeat(${size}, 1fr)`;
@@ -45,30 +44,61 @@ small.addEventListener("click", () => {
   draw.innerHTML = "";
   currentColor = "black";
   generateGrid(8);
+  medium.classList.remove("activeButton");
+  large.classList.remove("activeButton");
+  small.classList.add("activeButton");
 });
 medium.addEventListener("click", () => {
   draw.innerHTML = "";
   currentColor = "black";
   generateGrid(16);
+  small.classList.remove("activeButton");
+  large.classList.remove("activeButton");
+  medium.classList.add("activeButton");
 });
 large.addEventListener("click", () => {
   draw.innerHTML = "";
   currentColor = "black";
   generateGrid(48);
+  medium.classList.remove("activeButton");
+  small.classList.remove("activeButton");
+  large.classList.add("activeButton");
 });
 classic.addEventListener("click", () => {
   currentColor = "black";
+  rainbow.classList.remove("activeButton");
+  eraser.classList.remove("activeButton");
+  clear.classList.remove("activeButton");
+  classic.classList.add("activeButton");
 });
 rainbow.addEventListener("click", () => {
   randomColor();
   currentColor = `${randomColor()}`;
+  classic.classList.remove("activeButton");
+  eraser.classList.remove("activeButton");
+  clear.classList.remove("activeButton");
+  rainbow.classList.add("activeButton");
 });
 eraser.addEventListener("click", () => {
   currentColor = "white";
+  rainbow.classList.remove("activeButton");
+  classic.classList.remove("activeButton");
+  clear.classList.remove("activeButton");
+  eraser.classList.add("activeButton");
 });
 clear.addEventListener("click", () => {
   draw.innerHTML = "";
+  currentColor = "black";
   generateGrid(16);
+  rainbow.classList.remove("activeButton");
+  eraser.classList.remove("activeButton");
+  clear.classList.remove("activeButton");
+  small.classList.remove("activeButton");
+  large.classList.remove("activeButton");
+  medium.classList.add("activeButton");
+  classic.classList.add("activeButton");
 });
 
 generateGrid(16);
+medium.classList.add("activeButton");
+classic.classList.add("activeButton");

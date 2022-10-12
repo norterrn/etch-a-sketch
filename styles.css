@@ -1,17 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Gaegu&family=Gemunu+Libre&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 
 body {
   background-color: lightblue;
-  margin-top: 70px;
+  margin-top: 50px;
 }
-
+/* main things */
 .container {
   display: flex;
+
   flex-direction: column;
   align-items: center;
 }
@@ -22,7 +24,7 @@ body {
   padding: 50px;
   background-color: #8377d1;
   border-radius: 20px;
-  margin: 30px;
+  margin-bottom: 50px;
 }
 
 .draw {
@@ -39,14 +41,43 @@ body {
 
 .size {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 .colors {
-  gap: 10px;
+  margin-left: 100px;
+  gap: 15px;
   display: flex;
 }
 
 button {
   padding: 6px;
+  border-radius: 10px;
+  width: 120px;
+  height: 40px;
+  font-family: Gaegu;
+  font-size: 1em;
+  font-weight: 700;
 }
 
+button:hover {
+  scale: 1.1;
+  transform: 0.5s;
+}
+.activeButton {
+  border: 3px solid lightblue;
+  background-color: brown;
+  color: whitesmoke;
+  scale: 1.1;
+}
+
+/* Typography */
+
+h1 {
+  font-family: Gaegu;
+  font-size: 5em;
+}
+
+h2 {
+  font-family: Gaegu;
+  font-size: 2em;
+}
